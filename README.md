@@ -1,5 +1,4 @@
 # App-AyamiKojima
-## Objetivo
 O intuito desse projeto é criar um aplicativo biográfico da Ayami Kojima, uma artista japonesa reconhecida por seus trabalhos artísticos.
 
 ## Dupla
