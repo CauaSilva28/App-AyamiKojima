@@ -4,7 +4,7 @@ O intuito deste projeto é criar um aplicativo biográfico da Ayami Kojima, uma 
 ## Dupla
 <div align="left">
   
-| [<img src="https://avatars.githubusercontent.com/u/127631052?v=4" width=115><br><sub>Cauã Silva</sub>](https://github.com/CauaSilva28) | [<img src="https://avatars.githubusercontent.com/u/127640439?v=4" width=115><br><sub>Mariana Santiago</sub>](https://github.com/MariSantiago0) |
+| [<img src="https://avatars.githubusercontent.com/u/127631052?v=4" width=115><br><sub>Cauã Silva Moreira Santos</sub>](https://github.com/CauaSilva28) | [<img src="https://avatars.githubusercontent.com/u/127640439?v=4" width=115><br><sub>Mariana Santiago Matos</sub>](https://github.com/MariSantiago0) |
 |:---:|:---:|
   
 </div>
