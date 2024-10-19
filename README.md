@@ -11,7 +11,7 @@ O intuito deste projeto é criar um aplicativo biográfico da Ayami Kojima, uma 
 
 ## Sumário 
 - [Biografia](https://github.com/CauaSilva28/App-AyamiKojima/wiki/Biografia)
-- [Protótipo](https://github.com/CauaSilva28/App-AyamiKojima/wiki/Descri%C3%A7%C3%A3o-do-Desenvolvimento)
+- [Protótipo](https://github.com/CauaSilva28/App-AyamiKojima/wiki/Prot%C3%B3tipo)
 - [Diagrama de Classes](https://github.com/CauaSilva28/App-AyamiKojima/wiki/Diagrama-de-Classe)
-- [Descrição do Desenvolvimento](https://github.com/CauaSilva28/App-AyamiKojima/wiki/Prot%C3%B3tipo)
+- [Descrição do Desenvolvimento](https://github.com/CauaSilva28/App-AyamiKojima/wiki/Descri%C3%A7%C3%A3o-do-Desenvolvimento)
 
