@@ -45,7 +45,7 @@ class _MyHomePageState extends State<MyHomePage> {
     return Scaffold(
       backgroundColor: Color.fromARGB(255, 0, 0, 0),
       body: Stack(
-        children: [
+        children: [ 
           // Imagem de fundo fixa
           Container(
             decoration: const BoxDecoration(

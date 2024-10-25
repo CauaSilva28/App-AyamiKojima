@@ -44,7 +44,7 @@ class ArtePage extends StatelessWidget {
                 arte[0].titulo!,
                 style: TextStyle(
                   color: Color.fromARGB(255, 141, 0, 0),
-                  fontSize: 40,
+                  fontSize: 38,
                   fontWeight: FontWeight.bold,    
                   fontFamily: "Castoro",           
                 ),
