@@ -20,7 +20,7 @@ final List<Imagem> imagens = [
       "../img/goldenage4.png",
       "../img/goldenage5.png"
     ],
-    tamanho: [400, 200, 200, 180, 230],
+    tamanho: [400, 190, 210, 160, 240],
   ),
 ];
 
