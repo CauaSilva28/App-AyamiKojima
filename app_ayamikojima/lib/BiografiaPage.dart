@@ -147,7 +147,7 @@ class BiografiaPage extends StatelessWidget {
 }
 
 Widget criarImagens(Biografia bio) {
-  if (bio.imagem!.length == 3) {
+  if (bio.imagem!.length == 3) { // Se tiver 3 imagens, é montado essa estrutura
     return Row(
       mainAxisAlignment: MainAxisAlignment.center,
       children: List.generate(
@@ -165,7 +165,7 @@ Widget criarImagens(Biografia bio) {
     );
   }
 
-  if (bio.imagem!.length == 5) {
+  if (bio.imagem!.length == 5) { // Se tiver 5 imagens, é montado essa estrutura
     // Cria uma Column com múltiplas imagens
     return Column(
       mainAxisAlignment: MainAxisAlignment.center,

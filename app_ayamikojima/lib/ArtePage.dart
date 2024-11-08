@@ -23,6 +23,13 @@ final List<Arte> arte = [
     descricao: "ㅤㅤSeu Processo artísto consiste em começar com um esboço com pasteis ou bastões Conté, depois introduz sombras com Conté e tinta Nanquim. O fundo é destacado com textura, uma pegada tridimensional com espátulas e pasta modeladora. Em seguida, as cores de base são pintadas com tinta acrílica diluída. No final ela retoca seu trabalho com brilhos feitos por tinta metálica e com um acabamento em polímero brilhante.",
     espacamento: 10,
     img: "../img/imgArte3.png",
+  ),
+
+  Arte(
+    subtitulo: "Japanese Color Kingdom series",
+    descricao: "ㅤㅤPor sua arte ser única, Kojima participou de um livro que descreve suas técnicas de desenho, como Japanese Color Kingdom series. Publicado em primeiro de novembro em 1999.",
+    espacamento: 10,
+    img: "../img/imgArte4.png",
   )
 ];
 
@@ -82,7 +89,7 @@ class ArtePage extends StatelessWidget {
                       SizedBox(height: arte.espacamento),
 
                       Image(
-                        image: AssetImage(arte.img),
+                        image: AssetImage(arte.img!),
                         width: double.infinity,              
                       ),
                     ],
