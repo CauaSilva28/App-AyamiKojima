@@ -3,8 +3,7 @@ class Biografia{
   final String subtitulo;
   final String texto;
   final double espacamento;
-  final List? imagem;
-  final List? tamanhoImg;
+  final String? imagem;
 
   Biografia({
     this.titulo,
@@ -12,6 +11,5 @@ class Biografia{
     required this.texto,
     required this.espacamento,
     this.imagem,
-    this.tamanhoImg,
   });
 }

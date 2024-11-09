@@ -1,28 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
-import 'Imagem.dart';
 import 'Biografia.dart';
-
-final List<Imagem> imagens = [
-  Imagem(
-    caminho: [
-      "../img/caracteristica1.png",
-      "../img/caracteristica2.png",
-      "../img/caracteristica3.png"
-    ],
-    tamanho: [80, 90, 80],
-  ),
-  Imagem(
-    caminho: [
-      "../img/goldenage1.png",
-      "../img/goldenage2.png",
-      "../img/goldenage3.png",
-      "../img/goldenage4.png",
-      "../img/goldenage5.png"
-    ],
-    tamanho: [400, 190, 210, 160, 240],
-  ),
-];
 
 final List<Biografia> biografia = [
   Biografia(
@@ -30,8 +8,7 @@ final List<Biografia> biografia = [
     subtitulo:"Sobre mim",
     texto:"   Ayami Kojima é uma artista japonesa conhecida  pelas aclamadas ilustrações e designs de  personagens da série de videogames Castlevania. Digno de nota, ela é uma autodidata que desenvolveu uma rotina de técnicas pessoais de desenho que lhe rendeu um estilo bastante distinto, destacado em vários livros de técnicas artísticas.",
     espacamento:15,
-    imagem: imagens[0].caminho,
-    tamanhoImg: imagens[0].tamanho
+    imagem: "../img/imgBiografia.png",
   ),
 
   Biografia(
@@ -44,8 +21,7 @@ final List<Biografia> biografia = [
     subtitulo:"Golden Age",
     texto:"",
     espacamento:0,
-    imagem: imagens[1].caminho,
-    tamanhoImg: imagens[1].tamanho
+    imagem: "../img/imgBiografia1.png",
   ),
 
   Biografia(
@@ -130,8 +106,11 @@ class BiografiaPage extends StatelessWidget {
 
                       SizedBox(height: biografia.espacamento),
 
-                      if(biografia.imagem != null)
-                        criarImagens(biografia),
+                      if (biografia.imagem != null)
+                      Image(
+                        image: AssetImage(biografia.imagem!),
+                        width: double.infinity, 
+                      ),
 
                       SizedBox(height: 30),
                     ], 
@@ -144,83 +123,4 @@ class BiografiaPage extends StatelessWidget {
       ),
     );
   }
-}
-
-Widget criarImagens(Biografia bio) {
-  if (bio.imagem!.length == 3) { // Se tiver 3 imagens, é montado essa estrutura
-    return Row(
-      mainAxisAlignment: MainAxisAlignment.center,
-      children: List.generate(
-        bio.imagem!.length,
-        (index) => Padding(
-          padding: EdgeInsets.symmetric(horizontal: 20),
-          child: Image(
-            image: AssetImage(bio.imagem![index]),
-            alignment: Alignment.bottomCenter,
-            height: bio.tamanhoImg![index],
-            width: 100,
-          ),
-        ),
-      ),
-    );
-  }
-
-  if (bio.imagem!.length == 5) { // Se tiver 5 imagens, é montado essa estrutura
-    // Cria uma Column com múltiplas imagens
-    return Column(
-      mainAxisAlignment: MainAxisAlignment.center,
-      children: [
-        Image(
-          image: AssetImage(bio.imagem![0]),
-          width: bio.tamanhoImg![0],
-          fit: BoxFit.fill,
-          height:150,
-        ),
-
-        SizedBox(height: 20,),
-
-        Row(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            Image(
-              image: AssetImage(bio.imagem![1]),
-              width: bio.tamanhoImg![1],
-              fit: BoxFit.fill,
-              height:250,
-            ),
-            SizedBox(width: 10), // Espaçamento entre as imagens
-            Image(
-              image: AssetImage(bio.imagem![2]),
-              width: bio.tamanhoImg![2],
-              fit: BoxFit.fill,
-              height:250,
-            ),
-          ],
-        ),
-
-        SizedBox(height: 20,),
-
-        Row(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            Image(
-              image: AssetImage(bio.imagem![3]),
-              width: bio.tamanhoImg![3],
-              fit: BoxFit.fill,
-              height:300,
-            ),
-            SizedBox(width: 10), // Espaçamento entre as imagens
-            Image(
-              image: AssetImage(bio.imagem![4]),
-              width: bio.tamanhoImg![4],
-              fit: BoxFit.fill,
-              height:300,
-            ),
-          ],
-        ),
-      ],
-    );
-  }
-  
-  return SizedBox.shrink(); // Retorna um SizedBox vazio caso não tenha imagens
 }

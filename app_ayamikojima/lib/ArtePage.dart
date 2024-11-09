@@ -48,7 +48,7 @@ class ArtePage extends StatelessWidget {
             children: [
               const SizedBox(height: 100),
               Text(
-                arte[0].titulo!,
+                arte[0].titulo!, //Para elementos que não são obrigatórios, é preciso colocar o ! no final
                 style: TextStyle(
                   color: Color.fromARGB(255, 141, 0, 0),
                   fontSize: 38,
@@ -90,7 +90,8 @@ class ArtePage extends StatelessWidget {
 
                       Image(
                         image: AssetImage(arte.img!),
-                        width: double.infinity,              
+                        width: double.infinity,    
+                        fit: BoxFit.cover,         
                       ),
                     ],
                   );
