@@ -38,6 +38,8 @@ final List<Projetos> projetos = [
       'Silver Requiem',
       'Island of Depraved Angels',
       'Youmaki Series',
+      'Hunting the Shadows',
+      'Nobunaga´s Ambition',
     ],
     descricao:[
       'ㅤㅤCapas da serie Majin do Kikuchi Hideyuki, criador do famoso Vampire Hunter D lançado em 1 setembro 2013 pela editora Tiobukkusu.',
@@ -47,6 +49,8 @@ final List<Projetos> projetos = [
       'ㅤㅤCapa da serie Silver Requiem sobre um romance gay.',
       'ㅤㅤCapa de Island of Depraved Angels, fala sobre um romance gay.',
       'ㅤㅤCapas da serie Youmaki do Kikuchi Hideyuki, criador do famoso Vampire Hunter D.',
+      'ㅤㅤCapa da serie Majin do Kikuchi Hideyuki, criador do famoso Vampire Hunter D lançado em 1 setembro 2013 pela editora Tiobukkusu.',
+      'ㅤㅤIlustrações de capa dos três romances da série Cluster Saga de Piers Anthony. A tradução japonesa, naturalmente.',
     ],
     imagem: [
       '../img/imgNovels1.png',
@@ -56,6 +60,8 @@ final List<Projetos> projetos = [
       '../img/imgNovels5.png',
       '../img/imgNovels6.png',
       '../img/imgNovels7.png',
+      '../img/imgNovels8.png',
+      '../img/imgNovels9.png',
     ],
     tamanhoImg: [
       1,
@@ -65,6 +71,8 @@ final List<Projetos> projetos = [
       0.3,
       0.3,
       1,
+      0.3,
+      0.3,
     ],
   ),
 ];
@@ -134,7 +142,7 @@ class _ProjetosPageState extends State<ProjetosPage> {
                 ? Color.fromARGB(255, 141, 0, 0)
                 : const Color.fromARGB(255, 255, 255, 255), // Cor dinâmica do t
             fontSize: 20,
-            fontWeight: FontWeight.w500,
+            fontWeight: FontWeight.w700,
             fontFamily: "Castoro",
           ),
         ),
@@ -168,7 +176,7 @@ class _ProjetosPageState extends State<ProjetosPage> {
                 ? Color.fromARGB(255, 141, 0, 0)
                 : const Color.fromARGB(255, 255, 255, 255), // Cor dinâmica do t
             fontSize: 15,
-            fontWeight: FontWeight.w500,
+            fontWeight: FontWeight.w700,
             fontFamily: "Castoro",
           ),
         ),
