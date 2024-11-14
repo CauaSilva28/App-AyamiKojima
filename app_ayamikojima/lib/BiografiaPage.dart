@@ -56,7 +56,7 @@ class BiografiaPage extends StatelessWidget {
                 ),
                 
                 Positioned(
-                  top: 200, // Ajuste este valor para posicionar a imagem como desejar
+                  top: 200, 
                   left: 0,
                   right: 0,
                   child: Center(
